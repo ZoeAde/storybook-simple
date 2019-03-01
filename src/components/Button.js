@@ -1,15 +1,22 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Button({ task: { id, title, state }, onArchiveTask, onPinTask }) {
+// const Button = () => (
+//   <div>
+//     <button color='blue'>Cancel</button>
+//   </div>
+// );
+function Button({ button: onHover, onClick }) {
   return (
-    <button
-      {...other}
-      {...commonProps}
-      disabled={disabled}
-      type={type}
-      ref={other.inputref}>
-      {children}
-      {buttonImage}
-    </button>
+    <div  >
+      <button className='button' onClick={() => onClick('clicked')} onHover={() => onHover('hover')}>Default</button>
+    </div>
   );
 }
+
+Button.propTypes = {
+    onClick: PropTypes.func,
+    onHover: PropTypes.func,
+};
+
+export default Button;
