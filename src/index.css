@@ -224,7 +224,6 @@ body {
   font-style: 400;
   color: #333;
   font-size: 16px;
-  background-color: #26c6da;
 }
 h1,
 h2,
@@ -991,4 +990,47 @@ a:focus {
   display: inline-block;
   vertical-align: top;
   max-width: 100%;
+}
+
+/* buttons section */
+.bx--btn {
+  padding: 11px 24px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bx--btn:disabled {
+  background-color: rgba(0,0,0,0.05);
+  color: #000000;
+}
+
+.bx--btn--primary {
+	background-color: #486BFF;
+}
+
+.bx--btn--primary:hover {
+  background-color: #3856D7;
+}
+
+.bx--btn--secondary {
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #ffffff;
+	color: #000000;
+}
+
+.bx--btn--secondary:hover {
+  border: 1px solid #486BFF;
+  color: #486BFF;
+}
+
+.bx--btn--sm {
+  padding: 4px 7px;
 }
